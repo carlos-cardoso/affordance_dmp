@@ -57,7 +57,7 @@ sudo apt-get update && sudo apt-get -y install cmake libace-dev build-essential 
   qtdeclarative5-qtmultimedia-plugin qtdeclarative5-controls-plugin \
   qtdeclarative5-dialogs-plugin libqt5svg5
 git clone https://github.com/robotology/yarp
-cd yarp && mkdir build && cd build && cmake -DYARP_USE_PYTHON_VERSION=2.7 -DBUILD_SHARED_LIBS=ON -DCREATE_PYTHON=ON -DYARP_COMPILE_BINDINGS=ON .. && make && make install
+cd yarp && mkdir build && cd build && cmake -DYARP_USE_PYTHON_VERSION=2.7 -DBUILD_SHARED_LIBS=ON -DCREATE_PYTHON=ON -DYARP_COMPILE_BINDINGS=ON -DCREATE_GUIS=ON -DCREATE_LIB_MATH=ON .. && make && make install
 ```
 ## Install gazebo-yarp-plugins
 
