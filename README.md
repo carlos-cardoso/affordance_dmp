@@ -82,9 +82,25 @@ export GAZEBO_MODEL_PATH=/ws/icub-gazebo
 ## Install pydmps
 ```
 git clone https://github.com/studywolf/pydmps.git
-python setup.py install
+sudo python setup.py install
 ```
 
+## Run
+```
+yarpserver
+```
+```
+source load_gazebo.sh 
+gazebo icub_fixed.world
+```
 
+### to control joints directly
+```
+yarpmotorgui --robot icubSim
+```
 
+### run a dmp
+```
+python dmp.py
+```
 
